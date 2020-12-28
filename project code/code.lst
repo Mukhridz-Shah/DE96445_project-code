@@ -1,0 +1,178 @@
+MPASM  5.51                          CODE.ASM   12-28-2020  18:45:22         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Error[122]  : Illegal opcode (ran)
+                      00001 long ran;
+Error[122]  : Illegal opcode (buttonState)
+                      00002 int buttonState;
+Error[122]  : Illegal opcode (setup)
+                      00003 void setup ()
+Error[108]  : Illegal character ({)
+                      00004 {
+Warning[207]: Found label after column 1. (Serial.begin)
+Error[108]  : Illegal character (()
+                      00005   Serial.begin(9600);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00006   pinMode (10, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00007   pinMode (9, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00008   pinMode (8, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00009   pinMode (7, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00010   pinMode (3, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00011   pinMode (2, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00012   pinMode (13, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00013   pinMode (11, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00014   pinMode (12, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00015   pinMode (4, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00016   pinMode (5, OUTPUT);;
+Warning[207]: Found label after column 1. (pinMode)
+Error[108]  : Illegal character (()
+                      00017   pinMode (6, INPUT);;
+Warning[207]: Found label after column 1. (randomSeed)
+Error[108]  : Illegal character (()
+                      00018   randomSeed(analogRead(0));;
+Error[108]  : Illegal character (})
+                      00019 }
+Error[122]  : Illegal opcode (loop)
+MPASM  5.51                          CODE.ASM   12-28-2020  18:45:22         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00020 void loop()
+Error[108]  : Illegal character ({)
+                      00021 {
+Warning[207]: Found label after column 1. (buttonState)
+Error[113]  : Symbol not previously defined (digitalRead)
+Error[112]  : Missing operator
+  00000000            00022   buttonState = digitalRead(6);;
+Error[128]  : Missing argument(s)
+Error[108]  : Illegal character ({)
+                      00023     if (buttonState == HIGH){
+                      00024     ran = random(1, 7);;
+                      00025     Serial.println(ran);;
+                      00026     if (ran == 1){
+                      00027       digitalWrite (7, HIGH);;
+                      00028       digitalWrite (2, HIGH);;
+                      00029       digitalWrite (13, HIGH);;
+                      00030       delay (3000);;
+                      00031     }
+                      00032     if (ran == 2){
+                      00033       digitalWrite (10, HIGH);;
+                      00034       digitalWrite (3, HIGH);;
+                      00035       digitalWrite (2, HIGH);;
+                      00036       digitalWrite (5, HIGH);;
+                      00037       digitalWrite (12, HIGH);;
+                      00038       digitalWrite (11, HIGH);;
+                      00039       delay (3000);;
+                      00040     }
+                      00041     if (ran == 3){
+                      00042       digitalWrite (10, HIGH);;
+                      00043       digitalWrite (7, HIGH);;
+                      00044       digitalWrite (3, HIGH);;
+                      00045       digitalWrite (2, HIGH);;
+                      00046       digitalWrite (5, HIGH);;
+                      00047       digitalWrite (13, HIGH);;
+                      00048       digitalWrite (11, HIGH);;
+                      00049       delay (3000);;
+                      00050     }
+                      00051     if (ran == 4){
+                      00052       digitalWrite (10, HIGH);;
+                      00053       digitalWrite (8, HIGH);;
+                      00054       digitalWrite (4, HIGH);;
+                      00055       digitalWrite (5, HIGH);;
+                      00056       digitalWrite (2, HIGH);;
+                      00057       digitalWrite (13, HIGH);;
+                      00058       delay (3000);;
+                      00059     }
+                      00060     if (ran == 5){
+                      00061       digitalWrite (10, HIGH);;
+                      00062       digitalWrite (8, HIGH);;
+                      00063       digitalWrite (7, HIGH);;
+                      00064       digitalWrite (3, HIGH);;
+                      00065       digitalWrite (4, HIGH);;
+                      00066       digitalWrite (5, HIGH);;
+MPASM  5.51                          CODE.ASM   12-28-2020  18:45:22         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00067       digitalWrite (13, HIGH);;
+                      00068       digitalWrite (11, HIGH);;
+                      00069       delay (3000);;
+                      00070     }
+                      00071     if (ran == 6){
+                      00072       digitalWrite (10, HIGH);;
+                      00073       digitalWrite (9, HIGH);;
+                      00074       digitalWrite (8, HIGH);;
+                      00075       digitalWrite (3, HIGH);;
+                      00076       digitalWrite (4, HIGH);;
+                      00077       digitalWrite (12, HIGH);;
+                      00078       digitalWrite (11, HIGH);;
+                      00079       digitalWrite (13, HIGH);;
+                      00080       digitalWrite (5, HIGH);;
+                      00081       delay (3000);;
+                      00082     }
+                      00083 }
+                      00084   digitalWrite (10, LOW);;
+                      00085   digitalWrite (9, LOW);;
+                      00086   digitalWrite (8, LOW);;
+                      00087   digitalWrite (7, LOW);;
+                      00088   digitalWrite (3, LOW);;
+                      00089   digitalWrite (2, LOW);;
+                      00090   digitalWrite (13, LOW);;
+                      00091   digitalWrite (11, LOW);;
+                      00092   digitalWrite (12, LOW);;
+                      00093   digitalWrite (4, LOW);;
+                      00094   digitalWrite (5, LOW);;
+                      00095 }
+MPASM  5.51                          CODE.ASM   12-28-2020  18:45:22         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__18F4550                         00000001
+__DEBUG                           1
+buttonState                       00000000
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+
+All other memory blocks unused.
+
+Program Memory Bytes Used:     0
+Program Memory Bytes Free: 32768
+
+
+Errors   :    25
+Warnings :    15 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
